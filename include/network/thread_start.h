@@ -3,6 +3,6 @@
 
 #include <sys/socket.h>
 
-void thread_start(int port);
+void* thread_start(void*);
 
 #endif //BOOMERANGD_THREAD_START_H
