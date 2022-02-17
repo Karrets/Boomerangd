@@ -2,7 +2,15 @@ project('Boomerangd', 'c')
 
 include = include_directories('include')
 
-executable('Boomerangd',                #Executable Name
-           'src/main.c',                #Source Files
-           include_directories: include #Included Dirs
+threads = dependency('threads')
+
+executable( 'Boomerangd',
+
+          ['src/util/flags.c',
+           'src/util/util.c',
+           'src/network/thread_start.c',
+           'src/main.c'],
+
+           dependencies: [threads],
+           include_directories:[include]
 )
