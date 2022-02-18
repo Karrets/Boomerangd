@@ -1,12 +1,17 @@
-# Boomerang
+# Boomerangd
 A linux daemon used to easily define port and packet rules in a simple config file!
 
 ## Credits!
-I found this guide to be very helpful, as this was my first time writing a daemon.
-https://nullraum.net/how-to-create-a-daemon-in-c/
+I found [this](https://nullraum.net/how-to-create-a-daemon-in-c/)
+guide to be very helpful, as this was my first time writing a daemon.
 
-In addition, thanks to the Meson Build Project for making using c/++ not the worst thing in the world.
-(Looking at you cmake...)
+
+Thank you to the people who develop the *libpcap* C library, so I don't lose
+my mind by trying to do socket programming with no abstractions. And to [this](https://www.devdungeon.com/content/using-libpcap-c)
+tutorial for helping me use it!
+
+In addition, thanks to the *Meson Build* Project for making using C/++ not the worst thing in the world.
+(Looking at you CMAKE...)
 
 ## Config Files:
 Not yet determined. This program is in its infancy. When I have everything set up however,

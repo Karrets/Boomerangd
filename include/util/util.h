@@ -6,10 +6,10 @@
 #include "network/thread_start.h"
 
 typedef struct {
-    void (*daemonize)();
-    void (*cleanup)();
-    void (*print)(int, const char*, ...);
-    void (*thread_start)(void*);
+    void  (*daemonize)();
+    void  (*cleanup)();
+    void  (*print)(int, const char*, ...);
+    void* (*thread_start)(void*);
 
     Flags flags;
 } Util;

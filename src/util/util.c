@@ -128,9 +128,8 @@ void cleanup() {
 }
 
 Util makeUtil() {
-    openlog("Boomerangd", LOG_PID, LOG_DAEMON);
-
     Util util;
+    openlog("Boomerangd", LOG_PID, LOG_DAEMON);
 
     util.daemonize = &daemonize;
     util.cleanup = &cleanup;

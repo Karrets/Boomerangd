@@ -3,6 +3,7 @@ project('Boomerangd', 'c')
 include = include_directories('include')
 
 threads = dependency('threads')
+pcap = dependency('libpcap')
 
 executable( 'Boomerangd',
 
@@ -11,6 +12,6 @@ executable( 'Boomerangd',
            'src/network/thread_start.c',
            'src/main.c'],
 
-           dependencies: [threads],
+           dependencies: [threads, pcap],
            include_directories:[include]
 )

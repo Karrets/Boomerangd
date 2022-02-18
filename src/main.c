@@ -30,7 +30,6 @@ int main(int argc, char **argv) {
 
     pthread_t thread;
     int err = pthread_create(&thread, NULL, thread_start, (void*)&port);
-
     if(err > 0) exit = EXIT_FAILURE;
 
     //ALL DONE :)
